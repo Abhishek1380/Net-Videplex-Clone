@@ -1,0 +1,472 @@
+:root {
+    /* These are CSS Variables which can be accessed by var() */
+    --primary-color: #d90c0c;
+    --dark-color: #141414;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h3 {
+    color: #fff;
+}
+
+li a:hover {
+    font-size: 1.15rem;
+    text-decoration: underline;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+
+.showcase {
+    position: relative;
+    height: 93vh;
+    width: 100%;
+    background: url('../Img/Netflix\ Cover.jpg');
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 40px 46px 60px #000000;
+}
+
+.showcase-top {
+    height: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.showcase img {
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+}
+
+
+.showcase-content {
+    position: relative;
+    height: 565px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1.3rem;
+}
+
+.btn-lg {
+    font-size: 1.3rem;
+    padding: 0.3rem 0.3rem;
+    float: right;
+    margin-right: 1.4rem;
+}
+
+.btn-xl {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+}
+
+.btn-rounded {
+    border-radius: 3px;
+}
+
+/* Text-styles */
+.text-xl {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-dark {
+    color: #999;
+}
+
+/* Tabs Section */
+
+
+.tabs {
+    background: var(--dark-color);
+    padding: 3rem 2rem;
+
+}
+
+.tabs p {
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+    color: #b6aaaa;
+    padding-bottom: 1rem;
+}
+
+
+.tab-img {
+    width: 80px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    max-width: 70%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.tabs .container>div {
+    cursor: pointer;
+    color: #999;
+}
+
+.tabs .container>div:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.tab-border {
+    border-bottom: var(--primary-color) 4px solid;
+}
+
+/* Tabs Content */
+
+
+
+.tab-content {
+    height: 500px;
+    margin: 100px 0;
+}
+
+.tab-content-item {
+    margin: 100px auto;
+}
+
+#tab-1-content .tab-1-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tab-1-content-inner p {
+    font-size: 1.5rem;
+}
+
+.tab-1-content-inner img {
+    max-width: 85%;
+    max-height: 100%;
+}
+
+.text-lg-1 {
+    margin-left: 168px;
+    font-size: 2rem;
+    margin-top: 129px;
+
+}
+
+.btn-lg-1 {
+    font-size: 1.3rem;
+    padding: 0.3rem 0.3rem;
+
+    margin-left: 85px;
+}
+
+
+#tab-2-content .tab-2-content-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-lg-2 {
+    font-size: 1.8rem;
+    margin: 62px 0 47px 38px;
+}
+
+.tab-2-content-bottom img {
+    max-width: 38%;
+    max-height: 22%;
+}
+
+.tab-2-content-bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin: 5px 26px;
+}
+
+
+.table img {
+    max-width: 13px;
+    max-height: 50px;
+    background-color: #fff;
+}
+
+.table {
+    width: 70%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.table thead th {
+    text-transform: uppercase;
+    padding: 0.5rem 1.5rem;
+}
+
+.table tbody tr td {
+    color: #999;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+}
+
+.table tbody tr td:first-child {
+    text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+    background: #222;
+}
+
+#table-3-content {
+    margin-top: 4rem;
+    margin: 6rem auto;
+}
+
+.btn-lg-3 {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+td {
+    font-size: 1.5rem;
+}
+
+/* Footer */
+
+.footer {
+    max-width: 75%;
+    margin: 1rem auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.footer,
+.footer a {
+    color: #999;
+    font-size: 1rem;
+}
+
+.footer p {
+    margin-bottom: 2rem;
+}
+
+.footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li {
+    line-height: 1.9rem;
+}
+
+@media screen and (max-width:1000px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .text-dark {
+        font-size: 1.2rem;
+
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .tab-2-content-bottom {
+        grid-gap: 0.4rem;
+        margin: 5px 26px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .showcase {
+        /* height: 50vh; */
+    }
+
+    td {
+        font-size: 1.2rem;
+    }
+
+    .text-lg-2 {
+        font-size: 1.6rem;
+    }
+
+    .btn-lg-3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .showcase-content {
+        /* height: 430px; */
+    }
+
+    .showcase img {
+        width: 146px;
+    }
+
+    .showcase {
+        /* height: ; */
+    }
+
+
+    .btn-lg-1 {
+        margin-left: 154px;
+    }
+
+    .text-lg-2 {
+        margin: 66px 0px 50px 18px;
+        font-size: 1.3rem;
+    }
+
+    .btn-lg {
+        font-size: 1.1rem;
+    }
+
+
+
+}
+
+@media screen and (max-width:650px) {
+
+    .tab-2-content-bottom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tab-2-content-bottom div {
+
+        margin: 43px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .showcase img {
+        width: 130px;
+        margin-left: 8px;
+    }
+
+    .btn-xl {
+        font-size: 1.4rem;
+        padding: 0.5rem 0.9rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .table {
+        width: 97%;
+        margin: 13px;
+    }
+
+
+    td {
+        font-size: 1px;
+    }
+}
+
+/* Css for hiding css at the start of Js */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+    display: none;
+
+}
+
+.show {
+    display: block !important;
+}
